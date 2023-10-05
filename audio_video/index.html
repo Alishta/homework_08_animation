@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+    <link rel="stylesheet" href="../css/media.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1 class="heading">Cesária Évora</h1>
+        <div class="audio">
+            <p>
+                Cesaria Evora is one of my favorite singers. She has a deep clear voice and an interesting repertoire.
+            </p>
+            <audio controls id="audioElement">
+                <source src="audio/sezarija_evora_angola.mp3"autoplay>
+                <source src="audio/sezarija_evora_angola.wav"autoplay>
+                <source src="audio/sezarija_evora_angola.mp4"autoplay>
+                Ваш браузер не поддерживает элемент <code>audio</code>.
+            </audio>
+            <input id="playButton" type="button" value="play">
+        </div>
+        <p>
+            The singer not only had a solo program, but also duets with the Spanish bard Pedro Guerra.
+        </p>
+        <iframe src="https://www.youtube.com/embed/vtS_PE0xnL8" id="video" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h3>Cesaria Evora was born in Cape Verde, in Mindelo.</h3>
+        <iframe id="map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61085.798505795465!2d-25.022865931412873!3d16.88269966630528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f1eaf0349fc17%3A0xc7052d2993b8f4f3!2z0JzQuNC90LTQtdC70YMsINCa0LDQsdC-LdCS0LXRgNC00LU!5e0!3m2!1sru!2sua!4v1696506655409!5m2!1sru!2sua" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <footer class="footer">
+            <p>&#169; alinka</p>
+        </footer>
+    </div>
+    <script type="text/javascript">
+        document.getElementById("playButton").onclick = playSound;
+
+        function playSound() {
+            var music = document.getElementById("audioElement");
+            var button = document.getElementById("playButton");
+
+            if (music.paused) {
+                music.play();
+                button.value = "stop";
+            } else {
+                music.pause();
+                button.value = "play";
+            }
+        }
+    </script>
+</body>
+</html>

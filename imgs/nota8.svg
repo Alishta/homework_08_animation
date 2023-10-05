@@ -1,0 +1,137 @@
+<?xml version="1.0"?>
+<svg
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    id="svg2"
+    viewBox="0 0 256 256"
+    version="1.1"
+  >
+  <g
+      id="layer1"
+      stroke="#000"
+      transform="translate(0 -796.36)"
+    >
+    <path
+        id="path3004"
+        stroke-width="24"
+        stroke-linecap="square"
+        fill="none"
+        d="m128 819.36v169.04"
+    />
+    <path
+        id="path3774"
+        stroke-width="24"
+        transform="matrix(.56147 -.12240 .22389 .67983 -.11369 911.97)"
+        stroke-linecap="square"
+        d="m172 153.5a96.5 52.5 0 1 1 -193 0 96.5 52.5 0 1 1 193 0z"
+    />
+    <path
+        id="path3778"
+        stroke-width="1px"
+        transform="translate(0 796.36)"
+        d="m115.73 1.7778s96.049-0.46143 114.24 46.889c16.26 42.328-13.571 83.651-14.571 97.651s19.079 14.222 19.079 14.222l-2.873 16.063s-28.619 1.7302-30.619-18.27 4.4286-58.357-13.635-83.683c-18.07-25.325-71.17-19.65-71.17-19.65"
+    />
+  </g
+  >
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+        <dc:title
+          >Playing icon</dc:title
+        >
+        <dc:date
+          >2013-04-14T12:26:10</dc:date
+        >
+        <dc:description
+          >This icon is used in my Android application (https://play.google.com/store/apps/details?id=jp.gr.java_conf.neko_daisuki.anaudioplayer).</dc:description
+        >
+        <dc:source
+          >https://openclipart.org/detail/177069/playing-icon-by-sumitomohiko-177069</dc:source
+        >
+        <dc:creator
+          >
+          <cc:Agent
+            >
+            <dc:title
+              >SumiTomohiko</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:creator
+        >
+        <dc:subject
+          >
+          <rdf:Bag
+            >
+            <rdf:li
+              >playing</rdf:li
+            >
+            <rdf:li
+              >icon</rdf:li
+            >
+            <rdf:li
+              >music</rdf:li
+            >
+            <rdf:li
+              >mark</rdf:li
+            >
+            <rdf:li
+              >notation</rdf:li
+            >
+          </rdf:Bag
+          >
+        </dc:subject
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>
