@@ -60,6 +60,10 @@ body {
   animation-timing-function: linear;
   animation-fill-mode: backwards;
 }
+.wrapper .feather img:hover {
+  cursor: pointer;
+  transform: scale(1.5, 1.5);
+}
 @keyframes feather {
   0% {
     left: 0px;

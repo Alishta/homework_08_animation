@@ -54,6 +54,10 @@ body {
         animation-direction: alternate;
         animation-timing-function: linear;
         animation-fill-mode: backwards;
+        &:hover {
+            cursor: pointer;
+            transform: scale(1.5, 1.5);
+        }
     }
 
     @keyframes feather {
