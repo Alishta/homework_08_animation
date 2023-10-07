@@ -16,41 +16,36 @@ body {
   flex-direction: column;
   align-items: center;
 }
-
-.heading {
+.wrapper .heading {
   color: rgb(35, 0, 8);
   text-transform: uppercase;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-.audio {
-  margin: 20px 0;
+.wrapper #audioElement {
+  margin-top: 20px;
 }
-
-#video {
+.wrapper #playButton {
+  display: block;
+  margin: 5px;
+  padding: 5px 8px;
+  border-radius: 10px;
+  background-color: rgb(126, 200, 126);
+  text-transform: uppercase;
+}
+.wrapper #video {
   width: 70%;
   height: 415px;
   margin: 10px 0 20px;
 }
-
-#map {
+.wrapper #map {
   width: 50%;
   height: 400px;
 }
-
-#playButton {
-  display: block;
-  margin: 5px;
-  padding: 2px 5px;
-  border-radius: 10px;
-  background-color: rgb(126, 200, 126);
-}
-
-.footer {
+.wrapper .footer {
   width: 100%;
   margin-top: 15px;
   padding: 10px;
-  background-color: #959595;
+  background-color: rgb(126, 200, 126);
   color: #151515;
   text-align: center;
 }/*# sourceMappingURL=media.css.map */
