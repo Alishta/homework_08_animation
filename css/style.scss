@@ -1,5 +1,9 @@
 $main-color: lightblue;
 
+* {
+  box-sizing: border-box;
+}
+
 body {
     background: $main-color url(../imgs/back.webp) no-repeat;
     background-size: cover;
@@ -17,9 +21,9 @@ body {
         animation-timing-function: linear;
         animation-fill-mode: backwards;
         @keyframes sun {
-            0%  {left: 0px; top:0px;}
-            45% {left: 77%; top: 0px;}
-            99% {left: 0px; top:0px;}
+            0%  {left: 0px; top: 0px;}
+            45% {left: 85%; top: 0px;}
+            99% {left: 0px; top: 0px;}
         }
         
         &:hover {
