@@ -17,8 +17,13 @@ body {
   align-items: center;
 }
 .wrapper .heading {
+  margin: 20px 0 10px;
   color: rgb(35, 0, 8);
   text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.wrapper .text {
+  font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
 }
 .wrapper #audioElement {
@@ -32,10 +37,17 @@ body {
   background-color: rgb(126, 200, 126);
   text-transform: uppercase;
 }
+.wrapper #playButton:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
 .wrapper #video {
   width: 70%;
   height: 415px;
   margin: 10px 0 20px;
+}
+.wrapper .map-heading {
+  color: rgb(35, 0, 8);
 }
 .wrapper #map {
   width: 50%;
