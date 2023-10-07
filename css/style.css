@@ -7,8 +7,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-.sun {
+.wrapper .sun {
   width: 15%;
   position: relative;
   transition: width 2s, height 2s, transform 2s;
@@ -31,69 +30,45 @@ body {
     top: 0px;
   }
 }
-.sun .sun-eyes {
+.wrapper .sun:hover {
+  transform: rotate(360deg);
+}
+.wrapper .sun .sun-eyes {
   width: 25%;
   position: absolute;
   top: 33%;
   left: 37%;
 }
-.sun .sun-smile {
+.wrapper .sun .sun-smile {
   width: 25%;
   position: absolute;
   top: 50%;
   left: 37%;
 }
-
-.sun:hover {
-  transform: rotate(360deg);
-}
-
-.music {
+.wrapper .music {
   display: flex;
   flex-direction: row;
 }
-
-.container {
+.wrapper .music .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
-
-.instrument {
-  width: 30%;
-  transition: 7s all;
-  transition: width 2s, height 2s, transform 2s;
-  animation: instrument 10s infinite;
-  animation-direction: alternate-reverse;
-  animation-timing-function: ease-in-out;
-  animation-fill-mode: none;
-}
-
-@keyframes instrument {
-  0% {
-    transform: rotate(20deg);
-  }
-  75% {
-    transform: rotate(-20deg);
-  }
-}
-.sound {
+.wrapper .music .container .sound {
   display: flex;
   justify-content: space-around;
   position: relative;
   width: 100%;
 }
-
-.note {
+.wrapper .music .container .sound .note {
   width: 3%;
   position: absolute;
   bottom: 10px;
   transition: all 3s;
   animation: note 10s infinite;
 }
-
 @keyframes note {
   0% {
     transform: scale(0.8, 0.8);
@@ -102,12 +77,28 @@ body {
     transform: scale(2, 2);
   }
 }
-.note--add {
+.wrapper .music .container .sound .note--add {
   top: 20px;
   right: 29px;
 }
-
-.note--spec {
+.wrapper .music .container .sound .note--spec {
   top: 60px;
   left: 9px;
+}
+.wrapper .music .container .instrument {
+  width: 30%;
+  transition: 7s all;
+  transition: width 2s, height 2s, transform 2s;
+  animation: instrument 10s infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: none;
+}
+@keyframes instrument {
+  0% {
+    transform: rotate(20deg);
+  }
+  75% {
+    transform: rotate(-20deg);
+  }
 }/*# sourceMappingURL=style.css.map */

@@ -1,102 +1,95 @@
+$main-color: lightblue;
+
 body {
-    background: lightblue url(../imgs/back.webp) no-repeat;
+    background: $main-color url(../imgs/back.webp) no-repeat;
     background-size: cover;
 }
 
 .wrapper {
     display: flex;
     flex-direction: column;
-}
-.sun {
-    width: 15%;
-    position: relative;
-    transition: width 2s, height 2s, transform 2s;
-    animation: sun 10s infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-    animation-fill-mode: backwards;
-    @keyframes sun {
-        0%  {left: 0px; top:0px;}
-        45% {left: 77%; top: 0px;}
-        99% {left: 0px; top:0px;}
+    .sun {
+        width: 15%;
+        position: relative;
+        transition: width 2s, height 2s, transform 2s;
+        animation: sun 10s infinite;
+        animation-direction: alternate;
+        animation-timing-function: linear;
+        animation-fill-mode: backwards;
+        @keyframes sun {
+            0%  {left: 0px; top:0px;}
+            45% {left: 77%; top: 0px;}
+            99% {left: 0px; top:0px;}
+        }
+        
+        &:hover {
+            transform: rotate(360deg);
+        }
+        .sun-eyes {
+            width: 25%;
+            position: absolute;
+            top: 33%;
+            left: 37%;
+        }
+        
+        .sun-smile {
+            width: 25%;
+            position: absolute;
+            top: 50%;
+            left: 37%;
+        }
     }
-    
-    
-    .sun-eyes {
-        width: 25%;
-        position: absolute;
-        top: 33%;
-        left: 37%;
+
+    .music {
+        display: flex;
+        flex-direction: row;
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            .sound {
+                display: flex;
+                justify-content: space-around;
+                position: relative;
+                width: 100%;
+                .note {
+                    width: 3%;
+                    position: absolute;
+                    bottom: 10px;
+                    transition: all 3s;
+                    animation: note 10s infinite;
+                }
+                @keyframes note {
+                    0%   {transform: scale(0.8, 0.8)}
+                    75%  {transform: scale(2, 2)}
+                }
+                
+                .note--add {
+                    top: 20px;
+                    right: 29px;
+                }
+                
+                .note--spec {
+                    top: 60px;
+                    left: 9px;
+                }
+            }
+            .instrument {
+                width: 30%;
+                transition: 7s all;
+                transition: width 2s, height 2s, transform 2s;
+                animation: instrument 10s infinite;
+                animation-direction: alternate-reverse;
+                animation-timing-function: ease-in-out;
+                animation-fill-mode: none;
+            }
+            
+            @keyframes instrument {
+                0%   {transform: rotate(20deg)}
+                75%  {transform: rotate(-20deg)}
+            }
+        }
     }
-    
-    .sun-smile {
-        width: 25%;
-        position: absolute;
-        top: 50%;
-        left: 37%;
-    }
 }
-
-.sun:hover {
-    transform: rotate(360deg);
-}
-
-
-.music {
-    display: flex;
-    flex-direction: row;
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-}
-
-.instrument {
-    width: 30%;
-    transition: 7s all;
-    transition: width 2s, height 2s, transform 2s;
-    animation: instrument 10s infinite;
-    animation-direction: alternate-reverse;
-    animation-timing-function: ease-in-out;
-    animation-fill-mode: none;
-}
-
-@keyframes instrument {
-    0%   {transform: rotate(20deg)}
-    75%  {transform: rotate(-20deg)}
-}
-
-.sound {
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    width: 100%;
-}
-
-.note {
-    width: 3%;
-    position: absolute;
-    bottom: 10px;
-    transition: all 3s;
-    animation: note 10s infinite;
-}
-
-@keyframes note {
-    0%   {transform: scale(0.8, 0.8)}
-    75%  {transform: scale(2, 2)}
-}
-
-.note--add {
-    top: 20px;
-    right: 29px;
-}
-
-.note--spec {
-    top: 60px;
-    left: 9px;
-}
-
