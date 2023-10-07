@@ -16,6 +16,7 @@ body {
     .sun { 
         width: 15%;
         position: relative;
+        //set the sun to move horizontally
         transition: width 2s, height 2s, transform 2s;
         animation: sun 10s infinite;
         animation-direction: alternate;
@@ -27,16 +28,18 @@ body {
             99% {left: 0px; top: 0px;}
         }
         
+        // set the sun to rotate when hovering
         &:hover {
             transform: rotate(360deg);
         }
+        // positioning parts of the sun
         .sun-eyes {
             width: 25%;
             position: absolute;
             top: 33%;
             left: 37%;
         }
-        
+        // positioning parts of the sun
         .sun-smile {
             width: 25%;
             position: absolute;
@@ -60,6 +63,7 @@ body {
         }
     }
 
+    // feather blown by the wind
     @keyframes feather {
         0%  {left: 0px; top: 0px;}
         5% {left: 60px; top: 30px;}
@@ -100,6 +104,7 @@ body {
                     transition: all 3s;
                     animation: note 10s infinite;
                 }
+                // notes increase and decrease
                 @keyframes note {
                     0%   {transform: scale(0.8, 0.8)}
                     75%  {transform: scale(2, 2)}
@@ -115,6 +120,7 @@ body {
                     left: 9px;
                 }
             }
+
             .instrument {
                 width: 30%;
                 transition: all 7s;
@@ -124,6 +130,7 @@ body {
                 animation-fill-mode: none;
             }
             
+            // musical instruments sway
             @keyframes instrument {
                 0%   {transform: rotate(20deg)}
                 75%  {transform: rotate(-20deg)}
