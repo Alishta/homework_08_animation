@@ -176,8 +176,7 @@ body {
 }
 .wrapper .music .container .instrument {
   width: 30%;
-  transition: 7s all;
-  transition: width 2s, height 2s, transform 2s;
+  transition: all 7s;
   animation: instrument 10s infinite;
   animation-direction: alternate-reverse;
   animation-timing-function: ease-in-out;
