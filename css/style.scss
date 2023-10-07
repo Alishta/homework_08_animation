@@ -13,27 +13,13 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
-    .sun {
+    .sun { 
         width: 15%;
         position: relative;
-        -o-transition: width 2s, height 2s, transform 2s;
-        -moz-transition: width 2s, height 2s, transform 2s;
-        -webkit-transition: width 2s, height 2s, transform 2s;
         transition: width 2s, height 2s, transform 2s;
-        -o-animation: sun 10s infinite;
-        -moz-animation: sun 10s infinite;
-        -webkit-animation: sun 10s infinite;
         animation: sun 10s infinite;
-        -moz-animation-direction: alternate;
-        -webkit-animation-direction: alternate;
-        -o-animation-direction: alternate;
         animation-direction: alternate;
-        -moz-animation-timing-function: linear;
-        -webkit-animation-timing-function: linear;
-        -o-animation-timing-function: linear;
         animation-timing-function: linear;
-        -webkit-animation-fill-mode: backwards;
-        -o-animation-fill-mode: backwards;
         animation-fill-mode: backwards;
         @keyframes sun {
             0%  {left: 0px; top: 0px;}
@@ -42,9 +28,6 @@ body {
         }
         
         &:hover {
-            -moz-transform: rotate(360deg);
-            -o-transform: rotate(360deg);
-            -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
         }
         .sun-eyes {
@@ -64,32 +47,15 @@ body {
     
     .feather img {
         width: 5%;
-        -moz-transform: rotate(-90deg);
-        -o-transform: rotate(-90deg);
-        -webkit-transform: rotate(-90deg);
         transform: rotate(-90deg);
         position: relative;
         z-index: 5;
-        -o-animation: feather 25s infinite;
-        -moz-animation: feather 25s infinite;
-        -webkit-animation: feather 25s infinite;
         animation: feather 25s infinite;
-        -moz-animation-direction: alternate;
-        -webkit-animation-direction: alternate;
-        -o-animation-direction: alternate;
         animation-direction: alternate;
-        -moz-animation-timing-function: linear;
-        -webkit-animation-timing-function: linear;
-        -o-animation-timing-function: linear;
         animation-timing-function: linear;
-        -webkit-animation-fill-mode: backwards;
-        -o-animation-fill-mode: backwards;
         animation-fill-mode: backwards;
         &:hover {
             cursor: pointer;
-            -moz-transform: scale(1.5, 1.5);
-            -o-transform:scale(1.5, 1.5);
-            -webkit-transform: scale(1.5, 1.5);
             transform: scale(1.5, 1.5);
         }
     }
@@ -131,13 +97,7 @@ body {
                     width: 3%;
                     position: absolute;
                     bottom: 10px;
-                    -o-transition: all 3s;
-                    -moz-transition: all 3s;
-                    -webkit-transition: all 3s;
                     transition: all 3s;
-                    -o-animation: note 10s infinite;
-                    -moz-animation: note 10s infinite;
-                    -webkit-animation: note 10s infinite;
                     animation: note 10s infinite;
                 }
                 @keyframes note {
@@ -157,24 +117,10 @@ body {
             }
             .instrument {
                 width: 30%;
-                -o-transition: all 7s;
-                -moz-transition: all 7s;
-                -webkit-transition: all 7s;
                 transition: all 7s;
-                -o-animation: instrument 10s infinite;
-                -moz-animation: instrument 10s infinite;
-                -webkit-animation: instrument 10s infinite;
                 animation: instrument 10s infinite;
-                -moz-animation-direction: alternate-reverse;
-                -webkit-animation-direction: alternate-reverse;
-                -o-animation-direction: alternate-reverse;
                 animation-direction: alternate-reverse;
-                -moz-animation-timing-function: ease-in-out;
-                -webkit-animation-timing-function: ease-in-out;
-                -o-animation-timing-function: ease-in-out;
                 animation-timing-function: ease-in-out;
-                -webkit-animation-fill-mode: none;
-                -o-animation-fill-mode: none;
                 animation-fill-mode: none;
             }
             
