@@ -13,6 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     position: relative;
+    overflow: hidden;
     .sun { 
         width: 15%;
         position: relative;
@@ -59,7 +60,10 @@ body {
         animation-fill-mode: backwards;
         &:hover {
             cursor: pointer;
-            transform: scale(1.5, 1.5);
+            transform: skew(20deg, 15deg);
+        }
+        &:active {
+            transform: translate(50px, 20px);
         }
     }
 
